@@ -1,38 +1,47 @@
-.App {
-  text-align: center;
-}
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
+:root{
+  --primary-bg-color: #e41164;
+  --primary-text-color: #000
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
+.App{
+  background-color: var(--primary-bg-color);
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
 }
 
-.App-link {
-  color: #61dafb;
+h1{
+  color: rgb(255, 255, 255);
+    font-family: 'Dancing Script';
+    font-size: 3rem;
+    text-transform: uppercase;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.form{
+  display: flex;
+}
+
+.plus_btn, .trash_btn{
+  color : var(--primary-bg-color);
+  cursor: pointer;
+}
+.complete_btn{
+  color: rgb(74, 167, 136);
+}
+.todos_wrap{
+  margin-top: 50px;
+}
+.todo_item{
+  background-color: #fff;
+  list-style: none;
+  padding: 0 5px;
+  font-size: 1.2rem;
+  min-width: 100px;  
+}
+.completed{
+  text-decoration-line: line-through;
+  color: grey;
 }
